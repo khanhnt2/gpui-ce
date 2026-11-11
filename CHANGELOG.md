@@ -39,6 +39,7 @@ Items are sorted by issue or pull request number.
 - Fixed glyph rendering at font size zero to return an empty glyph. [#404](https://github.com/gpui-ce/gpui-ce/pull/404)
 - Added validation of rendered glyph dimensions and pixel-buffer lengths before returning the glyph. [#404](https://github.com/gpui-ce/gpui-ce/pull/404)
 - Enabled fallback to a monochrome outline in the same font when CBDT bitmap decoding fails. Rasterization returns an error if neither source can be rendered. [#404](https://github.com/gpui-ce/gpui-ce/pull/404)
+- macOS now uses Swash only for CBDT color rendering, all other requests now use the native renderer. [#405](https://github.com/gpui-ce/gpui-ce/pull/405)
 
 ### Security Changes
 
